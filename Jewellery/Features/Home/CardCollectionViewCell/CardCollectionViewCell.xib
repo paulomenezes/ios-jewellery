@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cardCollectionViewCellID" id="gTV-IL-0wX" customClass="CardCollectionViewCell" customModule="Jewellery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="350"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="240" height="350"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CDy-2u-e8B">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="350"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="p2n-BX-QIq">
+                                <rect key="frame" x="16" y="16" width="208" height="318"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" image="CardImageView1" translatesAutoresizingMaskIntoConstraints="NO" id="ok8-SY-Fgt">
+                                        <rect key="frame" x="0.0" y="0.0" width="208" height="148"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Diamond Ring" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10C-Tg-w9p">
+                                        <rect key="frame" x="0.0" y="158" width="208" height="76.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pure ring with Diamonds (0.1400 Ct)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5j-S0-S3Z">
+                                        <rect key="frame" x="0.0" y="244.5" width="208" height="33.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" name="SubtitleColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rnH-Jk-Uv4">
+                                        <rect key="frame" x="0.0" y="288" width="208" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 600" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tfc-Sz-kiD">
+                                                <rect key="frame" x="79.5" y="5" width="49" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" name="ColorButtonGradientText"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Tfc-Sz-kiD" firstAttribute="centerY" secondItem="rnH-Jk-Uv4" secondAttribute="centerY" id="JOJ-Z4-u6g"/>
+                                            <constraint firstItem="Tfc-Sz-kiD" firstAttribute="centerX" secondItem="rnH-Jk-Uv4" secondAttribute="centerX" id="LJU-3y-QVI"/>
+                                            <constraint firstAttribute="height" constant="30" id="ty8-gg-88G"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="p2n-BX-QIq" firstAttribute="leading" secondItem="CDy-2u-e8B" secondAttribute="leading" constant="16" id="85o-tG-XeM"/>
+                            <constraint firstAttribute="trailing" secondItem="p2n-BX-QIq" secondAttribute="trailing" constant="16" id="fYc-Mh-Njb"/>
+                            <constraint firstItem="p2n-BX-QIq" firstAttribute="top" secondItem="CDy-2u-e8B" secondAttribute="top" constant="16" id="pyK-YI-JM5"/>
+                            <constraint firstAttribute="bottom" secondItem="p2n-BX-QIq" secondAttribute="bottom" constant="16" id="rQf-5f-T09"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="CDy-2u-e8B" secondAttribute="trailing" id="93R-pa-HlB"/>
+                <constraint firstItem="CDy-2u-e8B" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="aF2-Cs-581"/>
+                <constraint firstAttribute="bottom" secondItem="CDy-2u-e8B" secondAttribute="bottom" id="c6Y-kQ-Qbe"/>
+                <constraint firstAttribute="top" secondItem="CDy-2u-e8B" secondAttribute="top" id="osm-eo-Qqn"/>
+            </constraints>
+            <size key="customSize" width="197" height="378"/>
+            <connections>
+                <outlet property="imageView" destination="ok8-SY-Fgt" id="7LW-gy-P33"/>
+                <outlet property="labelPrice" destination="Tfc-Sz-kiD" id="r0B-gV-gXT"/>
+                <outlet property="labelSubtitle" destination="f5j-S0-S3Z" id="39D-pz-lRc"/>
+                <outlet property="labelTitle" destination="10C-Tg-w9p" id="Ufu-kQ-jBA"/>
+                <outlet property="viewBackground" destination="CDy-2u-e8B" id="YuW-7A-VNu"/>
+                <outlet property="viewPrice" destination="rnH-Jk-Uv4" id="7sv-0h-wXO"/>
+            </connections>
+            <point key="canvasLocation" x="124.6376811594203" y="214.95535714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="CardImageView1" width="198" height="148"/>
+        <namedColor name="ColorButtonGradientText">
+            <color red="1" green="0.68235294117647061" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SubtitleColor">
+            <color red="0.60784313725490191" green="0.59215686274509804" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
